@@ -51,7 +51,7 @@ Qr Gen is an app that allows users generate QR code that specifically does somet
   ![NodeJS](https://img.shields.io/badge/nodejs-3670A0?style=for-the-badge&logo=nodejs&logoColor=ffdd54)
 
 - **Database**<br/>
-  ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+  ![MongoDb](https://img.shields.io/badge/mongodb-%2300f.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 - **Project Management and Version Control**<br/>
   ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
