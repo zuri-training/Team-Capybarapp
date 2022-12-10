@@ -1,0 +1,84 @@
+<%- include ("./partials/topnav"); %>
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <a href="/" class="logo">
+                    <img src="image/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__right">
+                <%- include ("./partials/navigation"); %>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main__container container">
+            <div class="random"></div>
+            <aside>
+                <ul class="profile__nav">
+                    <li title="Profile" class="active__profileNav"><a href="/dashboard"
+                            style="color:var(--primary-color)"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li title="Links"><a href="/links"><i class="fas fa-link"></i><span>Links</span></a></li>
+                    <li title="Generate QR Code"><a href="/generate"><i class="fas fa-gears"></i><span>Generate QR
+                                Code</span></a></li>
+                    <li title="Save"><a href="/draft"><i class="fas fa-floppy-disk"></i><span>Saved Draft</span></a>
+                    </li>
+                    <li title="Active QR Codes"><a href="/active"><i class="fas fa-qrcode"></i><span>Active QR
+                                Codes</span></a></li>
+                    <li title="Help & Support"><a href="/help"><i class="fas fa-question"></i><span>Help &
+                                Support</span></a></li>
+                </ul>
+            </aside>
+            <section class="show">
+                <div class="show__info">
+                    <div class="users__board">
+                        <div class="left">
+                            <img src="image/userImage.svg" alt="">
+                            <p>
+                                <%=name %>
+                            </p>
+                        </div>
+                        <div class="right">
+                            <a href="/users/logout" class="btn btn-secondary">Logout</a>
+                        </div>
+                    </div>
+                    <div class="change ">
+                        <h3>Change User Information</h3>
+                        <form action="" method="post" class="change__wrap">
+                            <div class="top">
+                                <div class="top__left">
+                                    <label for="username">User Name</label><br>
+                                    <input type="text" name="username" id="username" placeholder="<%=name %>">
+                                </div>
+                                <div class="top__right">
+                                    <label for="email">Email</label><br>
+                                    <input type="email" name="email" id="email" placeholder="<%=email%>">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="change ">
+                        <h3>Change Password</h3>
+                        <form action="" method="post" class="change__wrap">
+                            <div class="top">
+                                <div class="top__left">
+                                    <label for="password">New Password</label><br>
+                                    <input type="password" name="password" id="password" placeholder="">
+                                </div>
+                                <div class="top__right">
+                                    <label for="password2">Confirm Password</label><br>
+                                    <input type="password" name="password2" id="password2" placeholder="">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    </body>
+
+    </html>

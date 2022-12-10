@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #263C89;
+    --background: #F1F0F0;
+    --white-color: #fff;
+
+    --container-width-lg: 85%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+
+
+.top__navigation {
+    position: relative;
+    display: none;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 100vh;
+    position: fixed;
+    background-color: #263C89;
+    width: 100vw;
+    z-index: 5;
+}
+
+.top__navigation li {
+    background-color: #F1F0F0;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 90vw;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background: var(--background);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+section {
+    padding: 25px 0;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.active {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+header {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.header__container {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: ; */
+}
+
+.header__right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.navigation a {
+    padding: 10px 0;
+}
+
+.user__info {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.user__info img {
+    width: 50%;
+}
+
+.new__house {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 15%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.toggle__house {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+/* main section */
+main {
+    width: 100%;
+    position: relative;
+    height: 85vh;
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.main__container .random {
+    position: absolute;
+    width: 20%;
+    background: #263C89;
+    height: 100%;
+    left: 0;
+}
+
+.main__container aside {
+    width: 20%;
+    background: var(--primary-color);
+    position: sticky;
+}
+
+
+
+.profile__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 30px 0;
+    font-size: 18px;
+}
+
+/* .profile__nav.active__profileNav a {} */
+
+.blue {
+    color: var(--primary-color);
+}
+
+.active__profileNav {
+    background: var(--background);
+}
+
+.profile__nav li {
+    margin-right: 15px;
+    padding: 10px;
+    /* border-radius: 8px ; */
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.profile__nav li a span {
+    width: 80%;
+    overflow: hidden;
+}
+
+.profile__nav li a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-color);
+}
+
+/* other side */
+
+.main__container .show {
+    width: 80%;
+    background: var(--background);
+    overflow-y: auto;
+    height: 100%;
+}
+
+
+.show__info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.show__info::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+.show__info::-webkit-scrollbar {
+    width: 5px;
+}
+
+.show__info::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: var(--primary-color);
+}
+
+
+.users__board .left {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.users__board .left img {
+    width: 25%;
+}
+
+.users__board {
+    box-shadow: -7px 6px 15px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -7px 6px 15px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -7px 6px 15px -3px rgba(0, 0, 0, 0.75);
+    display: flex;
+    width: 100%;
+    padding: 18px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.change {
+    box-shadow: -7px 6px 15px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -7px 6px 15px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -7px 6px 15px -3px rgba(0, 0, 0, 0.75);
+    padding: 18px;
+    border-radius: 15px;
+    display: grid;
+    gap: 15px;
+}
+
+.change .top .top__left input,
+.change .top .top__right input {
+    width: 100%;
+}
+
+.change .top .top__left,
+.change .top .top__right {
+    width: 100%;
+}
+
+.change .top {
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.change__wrap {
+    display: grid;
+    gap: 15px;
+}
+
+/* .profile__nav a {} */
+
+/* -----------------media queries for tablet---------- */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+}
+
+
+
+
+/* -----------------media queries for responsive navbar---------- */
+@media screen and (max-width: 946px) {
+    .navigation {
+        display: none;
+    }
+
+    .container {
+        width: var(--container-width-md);
+    }
+
+    .profile__nav li a span {
+        display: none;
+    }
+
+    .profile__nav li {
+        border-radius: 8px;
+    }
+
+    .users__board .left img {
+        width: 50%;
+    }
+
+    .toggle__house {
+        display: block;
+    }
+}
+
+/* -----------------media queries for tablet---------- */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .show__info {
+        padding: 30px 15px;
+    }
+
+    .change .top {
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+}
+
+/* -----------------media queries for mobile---------- */
+@media screen and (max-width: 450px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .users__board {
+        display: grid;
+        gap: 15px;
+    }
+}

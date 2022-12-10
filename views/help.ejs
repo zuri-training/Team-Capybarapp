@@ -1,0 +1,90 @@
+<%- include ("./partials/topnav"); %>
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <a href="/" class="logo">
+                    <img src="image/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__right">
+                <%- include ("./partials/navigation"); %>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main__container container">
+            <div class="random"></div>
+            <aside>
+                <ul class="profile__nav">
+                    <li title="Profile"><a href="/dashboard"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li title="Links"><a href="/links"><i class="fas fa-link"></i><span>Links</span></a></li>
+                    <li title="Generate QR Code"><a href="/generate"><i class="fas fa-gears"></i><span>Generate QR
+                                Code</span></a></li>
+                    <li title="Save"><a href="/draft"><i class="fas fa-floppy-disk"></i><span>Saved Draft</span></a>
+                    </li>
+                    <li title="Active QR Codes"><a href="/active"><i class="fas fa-qrcode"></i><span>Active QR
+                                Codes</span></a></li>
+                    <li title="Help & Support" class="active__profileNav"><a href="/help"
+                            style="color:var(--primary-color)"><i class="fas fa-question"></i><span>Help &
+                                Support</span></a></li>
+                </ul>
+            </aside>
+            <section class="show">
+                <div class="show__info">
+                    <h2>Help & Support</h2>
+                    <div class="support">
+                        <div class="support__left">
+                            <h2>FAQs</h2><br>
+                            <div class="faqs">
+                                <p>How do i get a QR Code?</p>
+                                <p>how can i create digital content?</p>
+                                <p>How long does a QR Code last?</p>
+                                <p>can i get a QR Code as soon i create my digital menu?</p>
+                                <p>where do i change my username?</p>
+                            </div><br>
+                            <h3>Contact Us</h3> <br>
+                            <div class="faqs">
+                                <p>Chat with our Customer Representatives</p>
+                                <p>Got questions? get Real time live help with our chat support</p>
+                            </div><br>
+                            <a href="#">
+                                <div class="btn">
+                                    Contact
+                                </div>
+                            </a><br>
+                            <p>Get in touch with us, <br> Call us on 0803 - 6536-4635</p><br>
+                            <p>for further information, send us an email <a
+                                    href="mailto:support@qrcode01.com">support@qrcode01.com</a></p>
+                        </div>
+                        <div class="support__right">
+                            <h2>Our Offices</h2><br>
+                            <p>Visit any of our offices nationwide. find us at any of these locations</p> <br><br>
+                            <div class="map">
+                                <img src="image/map.svg" alt="">
+                            </div><br>
+                            <div class="pin">
+                                <div>
+                                    <p>Lagos</p>
+                                </div>
+                                <div>
+                                    <p>Abuja</p>
+                                </div>
+                                <div>
+                                    <p>Delta</p>
+                                </div>
+                                <div>
+                                    <p>Cross River</p>
+                                </div>
+                                <div>
+                                    <p>Adamawa</p>
+                                </div>
+                                <div>
+                                    <p>Kano</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>

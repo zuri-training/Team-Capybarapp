@@ -1,0 +1,39 @@
+<%- include ("./partials/topnav"); %>
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <a href="/" class="logo">
+                    <img src="image/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__right">
+                <%- include ("./partials/navigation"); %>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main__container container">
+            <div class="random"></div>
+            <aside>
+                <ul class="profile__nav">
+                    <li title="Profile"><a href="/dashboard"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li title="Links"><a href="/links"><i class="fas fa-link"></i><span>Links</span></a></li>
+                    <li title="Generate QR Code"><a href="/generate"><i class="fas fa-gears"></i><span>Generate QR
+                                Code</span></a></li>
+                    <li title="Saved Draft"><a href="/draft"><i class="fas fa-floppy-disk"></i><span>Saved
+                                Draft</span></a>
+                    </li>
+                    <li title="Active QR Codes" class="active__profileNav"><a href="/active"
+                            style="color:var(--primary-color)"><i class="fas fa-qrcode"></i><span>Active QR
+                                Codes</span></a></li>
+                    <li title="Help & Support"><a href="/help"><i class="fas fa-question"></i><span>Help &
+                                Support</span></a></li>
+                </ul>
+            </aside>
+            <section class="show">
+                <div class="show__info">
+                    <h2>This Feature is Currently Unavailable</h2>
+                </div>
+            </section>
+        </div>
+    </main>

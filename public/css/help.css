@@ -1,0 +1,242 @@
+.support {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.faqs {
+    display: grid;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.support__left .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pin {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.map img {
+    width: 100%;
+}
+
+.login__container {
+    /* padding: 25px 0; */
+    background: var(--background);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 100vh;
+}
+
+
+.login__left {
+    width: 100%;
+    height: 100%;
+}
+
+.login__left img {
+    margin-top: 2px;
+    width: 100%;
+}
+
+
+
+
+.login__right .noAccount {
+    font-size: 20px;
+}
+
+.login__right a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.login__right a:hover {
+
+    color: var(--primary-color);
+}
+
+.login__right {
+    display: grid;
+    height: 100%;
+}
+
+.login__right h2 {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.login__right button {
+    background: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+}
+
+
+.welcome__section {
+    position: relative;
+    width: 100%;
+}
+
+
+.hero__bg img {
+    width: 100%;
+}
+
+.hero__bg {
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.hero__left img {
+    width: 100%;
+}
+
+.hero__right .more {
+    padding: 35px 0;
+}
+
+.hero__right h1 {
+    color: var(--primary-color);
+}
+
+.ohh:hover {
+    color: var(--white-color);
+}
+
+.ohh {
+    color: var(--white-color);
+    background: var(--primary-color);
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.card__wrapper h2 {
+    color: var(--primary-color);
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.list .list_msg {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card__wrapper {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card__img img {
+    width: 100%;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.dat__card {
+    padding: 5px;
+    background: var(--background);
+    border-radius: 8px;
+}
+
+.testimonial__card {
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--primary-color);
+}
+
+.top__test {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+
+.social__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socals {
+    background: var(--primary-color);
+
+}
+
+@media screen and (max-width: 946px) {
+    .support {
+        grid-template-columns: 1fr;
+    }
+
+    .login__left {
+        display: none;
+    }
+
+    .login__container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__container {
+        grid-template-columns: 1fr;
+    }
+
+    .card__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .card__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+}
