@@ -1,0 +1,70 @@
+.container {
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+.bcgd {
+    background-image: url(./images/rectangle32.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 204px;
+    height: 60px;
+
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.flexItem {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#img1 {
+    width: 728px;
+    height: 541px;
+
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 22px;
+    font-weight: 500;
+    word-spacing: 10px;
+    margin: 10px;
+    color: #263c89;
+    text-decoration: none;
+}
+
+.roundEdge {
+    border-radius: 15px;
+}
+
+.blueButton {
+    background-color: #263c89;
+    color: #f6f6f6;
+    padding: 10px 40px;
+    border: solid #263c89;
+}
+
+.whiteButton {
+    background-color: #f6f6f6;
+    color: #263c89;
+}
+
+/* .floatRight {
+    float: right;
+} */
+
+/* .floatLeft {
+    float: left;
+} */
+/* .colorme {
+    background-color: brown;
+} */
