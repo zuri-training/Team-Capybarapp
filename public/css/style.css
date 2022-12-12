@@ -67,6 +67,10 @@ section {
     padding: 25px 0;
 }
 
+i {
+    cursor: pointer;
+}
+
 .btn {
     padding: 10px;
     border-radius: 10px;
@@ -336,6 +340,10 @@ main {
     .toggle__house {
         display: block;
     }
+}
+
+a {
+    color: var(--primary-color);
 }
 
 /* -----------------media queries for tablet---------- */
