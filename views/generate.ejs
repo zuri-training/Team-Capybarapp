@@ -18,13 +18,13 @@
                 <ul class="profile__nav">
                     <li title="Profile"><a href="/dashboard"><i class="fas fa-user"></i><span>Profile</span></a></li>
                     <li title="Links"><a href="/links"><i class="fas fa-link"></i><span>Links</span></a></li>
-                    <li title="Generate QR Code"><a href="//generate"><i class="fas fa-gears"></i><span>Generate QR
+                    <li title="Generate QR Code" class="active__profileNav"><a href="/generate"
+                            style="color: var(--primary-color);"><i class="fas fa-gears"></i><span>Generate QR
                                 Code</span></a></li>
                     <li title="Saved Draft"><a href="/draft"><i class="fas fa-floppy-disk"></i><span>Saved
                                 Draft</span></a>
                     </li>
-                    <li title="Active QR Codes" class="active__profileNav"><a href="/active"
-                            style="color:var(--primary-color)"><i class="fas fa-qrcode"></i><span>Active QR
+                    <li title="Active QR Codes"><a href="/active"><i class="fas fa-qrcode"></i><span>Active QR
                                 Codes</span></a></li>
                     <li title="Help & Support"><a href="/help"><i class="fas fa-question"></i><span>Help &
                                 Support</span></a></li>
@@ -32,7 +32,58 @@
             </aside>
             <section class="show">
                 <div class="show__info">
+                    <div class="wrap__me">
+                        <div class="shadow p-3 wrap__me">
+
+                            <div class="d-flex justify-content-center shadow">
+                                <i class="fa text-center p-2 bg-info m-1 rounded fa-file-text"
+                                    onclick="formType('planText')" aria-hidden="true">
+                                    <small>Text</small>
+
+                                </i>
+                                <i class="fa text-center p-2 bg-info m-1 rounded fa-link" onclick="formType('siteUrl')"
+                                    aria-hidden="true">
+                                    <small>Link</small>
+
+                                </i>
+                            </div>
+
+                            <div class="p-2 flex align-items-center flex-column justify-content-center">
+                                <div id="formBlock" class="shadow p-2">
+
+
+
+                                </div>
+                                <div class="d-flex align-items-center flex-column">
+                                    <input type="submit" onclick="QRCodeGenerator()" value="Generate"
+                                        id="generateButton"
+                                        class="p-2 m-3 bg-secondary text-white rounded border-0 w-50 shadow-lg">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shadow p-3 wrap__me">
+                            <h2 class="text-center">QR Code</h2>
+
+                            <div class="d-flex justify-content-end">
+                                <i class="fa text-center p-2 bg-info m-1 rounded  fa-copy" onclick="copyQR()"
+                                    aria-hidden="true">
+                                    <small>Copy</small></i>
+                                <i class="fa text-center p-2 bg-info m-1 rounded fa-download" onclick="downloadQR()"
+                                    aria-hidden="true">
+                                    <small>Download</small></i>
+                            </div>
+
+                            <div class="p-2">
+                                <div class="d-flex align-items-center flex-column" id="qrcode"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
+    <script src="/js/qrcode.min.js"></script>
+    <script src="/js/qr.js"></script>

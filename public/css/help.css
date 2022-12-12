@@ -121,13 +121,28 @@
     color: var(--white-color);
 }
 
+.wrap__me {
+    width: 100%;
+}
+
+.wrap__me img {
+    max-width: 250px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+
 .ohh {
     color: var(--white-color);
     background: var(--primary-color);
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 15px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+}
+
+.hero__right a {
+    margin: 40px 0;
 }
 
 .card__wrapper h2 {
