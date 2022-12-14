@@ -125,6 +125,14 @@
     width: 100%;
 }
 
+.product__dest {
+    width: 100%;
+}
+
+.product__dest a {
+    width: 100%;
+}
+
 .wrap__me img {
     max-width: 250px;
     margin: 10px 0;
@@ -210,6 +218,11 @@
 
 
 
+
+.social__container i {
+    color: var(--white-color);
+    font-size: 25px;
+}
 
 .social__container {
     display: flex;

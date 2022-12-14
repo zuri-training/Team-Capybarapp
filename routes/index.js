@@ -34,7 +34,7 @@ router.get("/active", ensureAuthenticated, (req, res) => {
 
 router.get("/draft", ensureAuthenticated, (req, res) => {
     res.render("draft", {
-        title: "Qrcode Generator - Home"
+        title: "Qrcode Generator - Draft"
     })
 })
 
@@ -45,6 +45,7 @@ router.get("/links", ensureAuthenticated, (req, res) => {
 })
 
 router.get("/generate", ensureAuthenticated, (req, res) => {
+    // router.get("/generate", (req, res) => {
     res.render("generate", {
         title: "Qrcode Generator - Generate link"
     })

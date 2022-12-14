@@ -149,9 +149,10 @@ function QRCodeGenerator() {
         colorLight: '#ffffff',
         correctLevel: QRCode.CorrectLevel.H
     });
+    console.log(qrcode);
 
 }
-
+// 
 
 function copyQR() {
     var img = document.querySelector('#qrcode').querySelector('img');
@@ -166,7 +167,6 @@ function copyQR() {
     }, 'image/png');
 
 
-
 }
 
 function downloadQR() {
@@ -179,3 +179,26 @@ function downloadQR() {
     document.body.removeChild(link);
     delete link;
 }
+
+
+var img = document.querySelector('#qrcode').querySelector('img');
+const fb = document.querySelector(".facebook");
+fb.addEventListener("click", () => {
+    imgLink = img.getAttribute("src");
+    const link = encodeURI(imgLink);
+    console.log("imgLink :" + imgLink)
+    const msg = encodeURIComponent("Hey, I just created my QRcode Checkout their websitr to create yours");
+    fb.href = `https://www.facebook.com/share.php?u=${link}`
+
+})
+
+
+const tw = document.querySelector(".twitter");
+tw.addEventListener("click", () => {
+    imgLink = img.getAttribute("src");
+    const link = encodeURI(imgLink);
+    console.log("imgLink :" + imgLink)
+    const msg = encodeURIComponent("Hey, I just created my QRcode Checkout their websitr to create yours");
+    tw.href = `https://www.twitter.com/share?&url=${link}&text={msg}$hashtags=java`
+
+})
