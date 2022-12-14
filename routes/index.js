@@ -44,8 +44,8 @@ router.get("/links", ensureAuthenticated, (req, res) => {
     })
 })
 
-// router.get("/generate", ensureAuthenticated, (req, res) => {
-router.get("/generate", (req, res) => {
+router.get("/generate", ensureAuthenticated, (req, res) => {
+    // router.get("/generate", (req, res) => {
     res.render("generate", {
         title: "Qrcode Generator - Generate link"
     })
