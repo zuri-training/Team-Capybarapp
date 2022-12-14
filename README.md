@@ -14,8 +14,6 @@
 
 - [Product Specification](##Product-Specification)
 
-- [Usage](##Usage)
-
 - [Project status](##Project-status)
 
 - [Collaboration](##Collaboration)
@@ -49,6 +47,7 @@ Qr Gen is an app that allows users generate QR code that specifically does somet
 
 - **Backend**<br/>
   ![NodeJS](https://img.shields.io/badge/nodejs-3670A0?style=for-the-badge&logo=nodejs&logoColor=ffdd54)
+  
 
 - **Database**<br/>
   ![MongoDb](https://img.shields.io/badge/mongodb-%2300f.svg?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -79,14 +78,34 @@ Qr Gen is an app that allows users generate QR code that specifically does somet
 - Mobile phone
 - Tablets
 
-## Usage
-
 ## Project status
 
-Project is currently ongoing.
+Project is completed.
 
 ## Collaboration
+- Afees Oduola
+- Abdul muizz Hamzat
+- Batya Tonny
+- Oluwaseun Olatoye
+- Atonye Olusola
+- Goya Prince
+- Erma Chifiero
+- Kingsley Nwanna
+- Vivian Onipede
+- Yemi Onifade
+- Quwam Daudu
+- Winner Uzoma
+- Faith Owoseni
+- Anagho Okiroro Obruthe
+- Hamifue Olorunda
 
 ## Relevant links
+- [Figma designs](https://www.figma.com/file/x4ljNgCVCoRKUSusBlCVHf/Team-Capybarapp%2C-Milestone-2-Task-(-Low-fidelity-%26-High-Fidelity-Design-)?node-id=0%3A1&t=8rheXkaz0DpCxZ1u-1)
+- [Testing](https://qrcode2.onrender.com/generate)
+- [Production](https://qrcode2.onrender.com/generate)
+- [Documentation](https://docs.google.com/document/d/1gvTIqgF9_66DaZWLoUBb-yK252LvrkOc_C6Bw_KiRJI/edit?usp=sharing)
+- [Data schema](https://drive.google.com/drive/folders/1sZBCxtvB2INONDuBmIOpYWNrfCBPq9c_)
+- [Mood board](https://www.figma.com/file/UDDmmvKkL71Mthoq5PWb1s/QR-CODE-GENERATOR?node-id=0%3A1&t=aE6tqDvz9Jc31VEd-0)
 
 # Acknowledgement
+Special thanks to Zuri for the opportunity granted to all team members to participate in the training cohort and also get to apply the trainings in this project. We also specially acknowledge 'Ingressive for Good' for financing the scholarship.
