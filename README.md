@@ -26,6 +26,8 @@
 
 This is a platform that allows users generate QR code that specifically does something when scanned.
 
+You can find the hosting link [here](https://qrcode2.onrender.com/generate)
+
 ## Documentation
 
 The documentaton for the project can be found [here](https://docs.google.com/document/d/1gvTIqgF9_66DaZWLoUBb-yK252LvrkOc_C6Bw_KiRJI/edit?usp=sharing)
@@ -47,7 +49,6 @@ Qr Gen is an app that allows users generate QR code that specifically does somet
 
 - **Backend**<br/>
   ![NodeJS](https://img.shields.io/badge/nodejs-3670A0?style=for-the-badge&logo=nodejs&logoColor=ffdd54)
-  
 
 - **Database**<br/>
   ![MongoDb](https://img.shields.io/badge/mongodb-%2300f.svg?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -83,6 +84,7 @@ Qr Gen is an app that allows users generate QR code that specifically does somet
 Project is completed.
 
 ## Collaboration
+
 - Afees Oduola
 - Abdul muizz Hamzat
 - Batya Tonny
@@ -100,7 +102,8 @@ Project is completed.
 - Hamifue Olorunda
 
 ## Relevant links
-- [Figma designs](https://www.figma.com/file/x4ljNgCVCoRKUSusBlCVHf/Team-Capybarapp%2C-Milestone-2-Task-(-Low-fidelity-%26-High-Fidelity-Design-)?node-id=0%3A1&t=8rheXkaz0DpCxZ1u-1)
+
+- [Figma designs](<https://www.figma.com/file/x4ljNgCVCoRKUSusBlCVHf/Team-Capybarapp%2C-Milestone-2-Task-(-Low-fidelity-%26-High-Fidelity-Design-)?node-id=0%3A1&t=8rheXkaz0DpCxZ1u-1>)
 - [Testing](https://qrcode2.onrender.com/generate)
 - [Production](https://qrcode2.onrender.com/generate)
 - [Documentation](https://docs.google.com/document/d/1gvTIqgF9_66DaZWLoUBb-yK252LvrkOc_C6Bw_KiRJI/edit?usp=sharing)
@@ -108,4 +111,5 @@ Project is completed.
 - [Mood board](https://www.figma.com/file/UDDmmvKkL71Mthoq5PWb1s/QR-CODE-GENERATOR?node-id=0%3A1&t=aE6tqDvz9Jc31VEd-0)
 
 # Acknowledgement
+
 Special thanks to Zuri for the opportunity granted to all team members to participate in the training cohort and also get to apply the trainings in this project. We also specially acknowledge 'Ingressive for Good' for financing the scholarship.
